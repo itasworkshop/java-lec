@@ -1,0 +1,16 @@
+Java 8
+
+1. Lambda
+2. Streams API
+3. Interfaces
+4. Java Date & Time API
+5. Misc
+
+
+1. Lambda
+1) Methods of object class?
+2) Difference between Comparable and Comparator? - sorting coll obj.
+ans - Comparable - compareTo()
+3) What is Functional interface?
+with only one abstract method. - Comparable, Runnable
+4) what is lambda?
