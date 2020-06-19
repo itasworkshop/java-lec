@@ -14,3 +14,17 @@ ans - Comparable - compareTo()
 3) What is Functional interface?
 with only one abstract method. - Comparable, Runnable
 4) what is lambda?
+5) what is generic?
+6) Implementing Runnable and Clonable.
+7) what is @Functional interface?
+ans - ensures that compiler will check if interface is functional or not. If not it will give compilation error.
+8) what is Consumer functional interface?
+ans - Represents an operation that accepts a single input argument and returns no result. Unlike most other functional interfaces, Consumer is expected to operate via side-effects.
+9) what are the changes happened in Collection API?
+ans - i) change in List interface
+	java 8 onwards List forEach mehtod
+
+
+
+
+
