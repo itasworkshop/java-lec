@@ -24,6 +24,79 @@ ans - Represents an operation that accepts a single input argument and returns n
 ans - i) change in List interface
 	java 8 onwards List forEach mehtod
 
+10) Is it neccessary to override hashcode for equals?
+11) What is Consumer ?
+ans: for FI, takes one argument and produces result.
+accept() method.
+
+12) what are the changes/New methods in Collection framwork in java 8 ?
+ans: i) mylist.forEach(action) method for iteration on sequence.
+Performs the given action for each element of the Iterable until all elements have been processed or the action throws an exception. Unless otherwise specified by the implementing class, actions are performed in the order of iteration (if an iteration order is specified). Exceptions thrown by the action are relayed to the caller.
+
+ii) default boolean removeIf(Predicate<? super E> filter)
+Removes all of the elements of this collection that satisfy the given predicate. Errors or runtime exceptions thrown during iteration or by the predicate are relayed to the caller.
+
+13) what is difference between forEach method and for each loop?
+ans:		mylist.forEach(c); //method in java 8 coll, takes Consumer as arg with logic in accept.
+
+		//regular for each loop		
+		for(String i: mylist) {
+			System.out.println("iiiiiii"+i);
+		}
+
+14) what is Predicate ?
+ans: This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.
+
+boolean test(T t)
+Evaluates this predicate on the given argument.
+
+15) what is code reusability in lambda?
+ans- Object :: method
+	Consumer::accept
+	Predicate::test
+	"::" operator for code reusability.
+examplea mylist.forEach(System.out::println);
+numbers.removeIf(EvenOdd::isEven);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
