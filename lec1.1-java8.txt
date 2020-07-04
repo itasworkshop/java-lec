@@ -58,6 +58,42 @@ ans- Object :: method
 examplea mylist.forEach(System.out::println);
 numbers.removeIf(EvenOdd::isEven);
 
+16) Scope with Lambda, Local variable n defined in an enclosing scope must be final or effectively final//lambda with concurrency?
+ans: this constraint was added to reduce concurrency problems, mutating variables are prone to change her by lambda. Two threads get their own copies of methods.
+
+@FunctionalInterface
+interface MyAdder{
+	int add(int x);
+}
+
+public class TestLambdaScope {
+	
+	public static MyAdder getMyAdder() {
+		int n = 10; //Local variable n defined in an enclosing scope must be final or effectively final
+		//n++;
+		return x -> x + n;
+	}
+
+	public static void main(String[] args) {
+		
+		MyAdder myAdder = getMyAdder();
+		System.out.println(myAdder.add(20));
+
+	}
+
+}
+
+17) what is scope for lambda?
+ans: i) Lambda expression can use variables, those were in scope when lambda expression was created.
+
+	Lambda has access to all variables(all in scope variales) wherever it is created.
+
+	public static MyAdder getMyAdder() {
+		final int n = 10; 
+		return x -> x + n;
+	}
+	ii) Local scope dies as soon as method is over but with lambda local variable survies even after method. therefore we need to be extra careful if there is chance of changing variable.
+
 
 
 

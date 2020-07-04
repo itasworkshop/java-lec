@@ -1,0 +1,33 @@
+Java 8
+
+1. Lambda
+2. Streams API
+3. Interfaces
+4. Java Date & Time API
+5. Misc
+
+
+1. what is Java Stream API?
+ans: A sequence of elements supporting sequential and parallel aggregate operations. The following example illustrates an aggregate operation using Stream and IntStream:
+
+	i) Nothing to do with existing I/O stream.
+	ii) Its not data structure, uses data structure, does not change data structure.
+	iii) intermediate operations are Lazy evaluation and returns streams.
+	iv) For parallel processing, many implementations are available.
+for example - map(),reduce(),filter(),forEach() etc.
+	v) Example.
+	//numbers.stream().map(x -> x+1).forEach(i -> System.out.println(i));
+	int result = numbers.stream().reduce((x,y) -> x+y).get();
+	//System.out.println(result);
+		
+	numbers.stream().filter(x -> x%2==0).forEach(i -> System.out.println(i));
+
+2) changes in collection related to stream?
+ans: i) stream() - Returns a sequential Stream with this collection as its source.
+    ii) stream
+
+
+
+
+
+
