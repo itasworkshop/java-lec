@@ -26,6 +26,46 @@ for example - map(),reduce(),filter(),forEach() etc.
 ans: i) stream() - Returns a sequential Stream with this collection as its source.
     ii) stream
 
+3) what is execution sequence for stream?
+ans: even after multiple statements, collection is always processed with a single pass - Lazy invocation.
+		List<Integer> numbers = Arrays.asList(1,2,3,4);		
+		
+		//numbers.stream().filter(x -> x%2==0).forEach(i -> System.out.println(i));		
+		
+		Stream<Integer> newstream = numbers.stream().filter(x -> {
+			System.out.println("hello from inside filter "+x);
+			return x%2==0;
+		});
+		//newstream = [2,4];
+		System.out.println("after filter");
+		newstream.forEach(i -> System.out.println("from foreach "+i));
+
+		//output is not accoring to sequence but lazy invocation
+	after filter
+	hello from inside filter 1
+	hello from inside filter 2
+	from foreach 2
+	hello from inside filter 3
+	hello from inside filter 4
+	from foreach 4
+
+4) what is Optional?
+ans: A container object which may or may not contain a non-null value. If a value is present, isPresent() will return true and get() will return the value.
+
+5) NullPointerException - because object reference is null? whats solution in java 8?/how do you handle NullPointerException using Optional class?
+ans: RuntimeException NullPointerException= if any object is not available java assigns- null.
+
+6) what is collect(), what is Collectors?
+ans: collecting data for aggregate operation with the help of Collectors which encapsulates functions to apply.
+
+Performs a mutable reduction operation on the elements of this stream using a Collector. A Collector encapsulates the functions used as arguments to collect(Supplier, BiConsumer, BiConsumer), allowing for reuse of collection strategies and composition of collect operations such as multiple-level grouping or partitioning.
+example: 
+
+Map<String, List<Person>> group = people.stream().collect(Collectors.groupingBy(Person::getLname));
+		
+System.out.println(group.get("Sharma"));
+
+
 
 
 
