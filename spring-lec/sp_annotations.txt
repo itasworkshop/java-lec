@@ -1,0 +1,45 @@
+Spring Annotation
+1) @Configuration - cl
+- indicates that this is a config class which will provide beans to AC.
+
+2) @Bean - ml
+- indicates that returned objects should be beans in AC with method name as bean's ID.
+
+@Configuration
+public class SC{
+	@Bean
+	public InvSer invSer(){
+		return new InvSer();
+	}
+	@Bean
+	public PrdSer prdSer(){
+		return new PrdSer(InvSer());
+	}
+
+}
+
+3) @SpringBootApplication - cl
+- indicates that its a spring boot application.
+- Composite of three other annotations
+	- @SpringBootConfiguration
+		- specialised form of @Configuration, indicates that this class 			can be used for additional config.
+	- @EnableAutoConfiguration
+	- @ComponentScan
+		- enables component scanning of @Component, @Controller, @Service
+
+4) @Controller - cl
+- indicates this class as controller, doesn't do much except let component class automatically discovers this as controller.
+
+5) @GetMapping("/") -ml
+- indicates how to repond to HTTP GET method for path ("/")
+
+
+
+
+
+
+
+
+
+
+

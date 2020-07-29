@@ -1,0 +1,39 @@
+Spring Overview
+- Apps are made up of different components(beans), those to be created and troducded to each other. Spring Application context(container) creates and manages these components.
+
+- DI pattern wires these components(beans) together through constructor argument or or property accessor methods.
+- AC --> InventoryService and ProductService
+
+- XML was used to create and wire beans.
+- Nowadays java based config.
+- @Configuration - cl
+- @Bean - ml
+
+- Component scanning
+spring automatically scans components from classpath and create them as beans.
+
+- Autowiring
+spring automatically injects components for DI
+
+- spring boot offers more auto-configurations based on classpath, env variables etc.
+
+- MyApp project structure
+- mvnw and mvnw.cmd - maven wrapper scripts used to buil without maven intalled.
+- POM.xml maven build specification.
+- JAR packaging for cloud and WAR for server deployment.
+- @SpringBootApplication - cl
+- run()
+	bootstrapes application and create AC, takes config class and cmd args.
+- @RunWith(SpringRunner.class) -cl
+	- junit annotation provides test runner which helps junit running a test
+	- even empty @Test -ml will make sure AC is loaded successfully.
+	- SpringRunner - spring provided test runner, that provides AC to run test.
+
+- Spring MVC
+-controller - a class that handles request and responds with information.
+- @Controller -cl
+- @GetMapping("/") -ml
+- for HTTP get mehtod, will map with /home
+
+
+
