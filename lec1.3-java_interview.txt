@@ -1,0 +1,52 @@
+1) WAP to sort month in a list?, where months are given in String.
+ans: List<String> mlist = Arrays.asList("April","January","March");
+		
+		Collections.sort(mlist,
+				(String o1,String o2) -> { 
+					SimpleDateFormat sdf  = new SimpleDateFormat("MMM");
+					//return o1.compareTo(o2);
+				try {
+					return sdf.parse(o1).compareTo(sdf.parse(o2));
+				} catch (ParseException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				return o1.compareTo(o2);
+				
+				}
+				
+				);
+
+2) swap two numbers without using temp variable;
+ans: 		x = x+ y;
+		y = x- y;
+		x = x- y;
+
+3) What happens if one of the microservices down, how do you handle that?
+ans: Circuit breaker(hysterix) and fallout mechanism.
+
+4) How hashmap works internally?
+ans: 	i) hash. key, value, next
+	ii) Hashing means converting object into integer value using hashcode().
+	iii) hashmap contains array of nodes.
+	iv) A bucket is one element of HashMap array. It is used to store nodes. Two or more nodes can have the same bucket. In that case link list structure is used to connect the nodes. Buckets are different in capacity.
+	v) capacity = number of buckets * load factor
+	vi) index = hashCode(key) & (n-1)
+	vii) calculate index , put in array, if same key link with next in same bucket.
+	viii) java 8 maintains balanced tree after certain limit for storing next items in same bucket.
+
+5) can we have different retun type in overridden method?
+ans: Covariant(Animal-Dog-BullDog) return types are allowed but not different types.
+
+6) Which one is better for performance, Array or ArrayList?
+ans: Ofcourse Array but not much and ArrayList has some extra overhead for resizing. With objects ArrayList but with premitives array if we know size.
+
+7) Difference between Runnable and Thread?
+ans: Runnable is preferred , we can run it or pass it in executor service or as a task in single threaded app.
+
+8) what is callable in Java?
+ans: For implementing Runnable, the run() method needs to be implemented which does not return anything, while for a Callable, the call() method needs to be implemented which returns a result on completion. Note that a thread can’t be created with a Callable, it can only be created with a Runnable.
+Another difference is that the call() method can throw an exception whereas run() cannot.
+
+
+

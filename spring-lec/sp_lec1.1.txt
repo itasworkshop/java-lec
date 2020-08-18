@@ -1,7 +1,7 @@
 Spring Overview
-- Apps are made up of different components(beans), those to be created and troducded to each other. Spring Application context(container) creates and manages these components.
+- Apps are made up of different components(beans), those to be created and introducded to each other. Spring Application context(container) creates and manages these components.
 
-- DI pattern wires these components(beans) together through constructor argument or or property accessor methods.
+- DI pattern wires these components(beans) together through constructor argument or property accessor methods.
 - AC --> InventoryService and ProductService
 
 - XML was used to create and wire beans.
@@ -18,7 +18,7 @@ spring automatically injects components for DI
 - spring boot offers more auto-configurations based on classpath, env variables etc.
 
 - MyApp project structure
-- mvnw and mvnw.cmd - maven wrapper scripts used to buil without maven intalled.
+- mvnw and mvnw.cmd - maven wrapper scripts used to build without maven intalled.
 - POM.xml maven build specification.
 - JAR packaging for cloud and WAR for server deployment.
 - @SpringBootApplication - cl
