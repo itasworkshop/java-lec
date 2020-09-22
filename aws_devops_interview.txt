@@ -1,0 +1,19 @@
+1. What is Auto-scaling in AWS?
+and: Amazon EC2 Auto Scaling helps you maintain application availability and allows you to automatically add or remove EC2 instances according to conditions you define. You can use the fleet management features of EC2 Auto Scaling to maintain the health and availability of your fleet. 
+	i) Dynamic and 
+	ii) Predictive scaling. 
+
+Dynamic scaling responds to changing demand and predictive scaling automatically schedules the right number of EC2 instances based on predicted demand. Dynamic scaling and predictive scaling can be used together to scale faster.
+Advantages- 
+	i) IMPROVE FAULT TOLERANCE
+		Amazon EC2 Auto Scaling can detect when an instance is unhealthy, terminate it, and replace it with a new one.
+	ii) INCREASE APPLICATION AVAILABILITY
+		Amazon EC2 Auto Scaling ensures that your application always has the right amount of compute, and also proactively 			provisions capacity with Predictive Scaling. 
+	iii) LOWER COSTS
+		Amazon EC2 Auto Scaling adds instances only when needed, and can scale across purchase options to optimize performance and 			cost. 
+
+
+2. What is sqs?
+3. how do you configure jenkins jobs?
+
+

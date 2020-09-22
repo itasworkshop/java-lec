@@ -1,0 +1,72 @@
+1. RDBMS
+Master-Detail relationship
+
+Dept[did,dname,location]
+11 "CS" "New York"
+12 "EC" "New York"
+
+Students[sid,sname,sub,dept]
+101 "Raj" PCM 11
+
+why RDBMS?
+0. ACID properties
+Atomicity
+Consistancy
+Isolation
+Durability
+
+Transfer transaction
+A --> B
+1000 1000
+200
+-200 +200
+
+800 1200
+1000 1000
+
+
+
+
+
+1. offers optimsed way of storing and retriving data with relationship.
+2. SQL (almost english) for retriving
+3. Can be backend for any application.
+4. Good for structured Database,
+
+
+example:- Oracle Enterpirse,DB2, SQLServer,MySQL,SYBASE, Postgres(Open source), SQLite(in-memory)
+
+NoSQL Databases
+Are good for semi and unstructured data set
+
+BASE - 
+
+MongoDb
+HBase
+Cassendra
+CouchDb
+Neo4j
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
