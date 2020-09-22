@@ -1,4 +1,20 @@
 TOC
 
+Module-1-one month- 4 weeks
+
 1. Spring core concepts-
 what is spring, types, DI, AOP, spring boot, spring data, spring security, integration and spring batch, spring cloud
+2. what is MVC, create sample project, forms, validate forms, views etc
+3. working with data, DB connection, JDBC, persistance, JPA
+4. spring security, enable/disable, securing web request, customised login/logout page.
+5. spring configuration, logging, aop
+6. REST web services
+7. consuming REST services
+8. Messing Async, JMS, ActiveMQ, Kafka
+9. Reactive API
+10. Spring actutator
+11. Deploying spring App
+
+Module- 2-3 weeks
+Microservices
+
