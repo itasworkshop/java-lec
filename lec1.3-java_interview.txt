@@ -48,5 +48,12 @@ ans: Runnable is preferred , we can run it or pass it in executor service or as 
 ans: For implementing Runnable, the run() method needs to be implemented which does not return anything, while for a Callable, the call() method needs to be implemented which returns a result on completion. Note that a thread can’t be created with a Callable, it can only be created with a Runnable.
 Another difference is that the call() method can throw an exception whereas run() cannot.
 
+9) How many objects are created ?
+String s = "hello"+"how"+"are"+"you"
+ans: 5 objects, 4 + 1due to StringBuilder class during concatenation. Also String s = new String("xyz") creates two object one in pool area and one in non pool area.
+
+10) Is Hibernate session thread safe?
+ans: No
+
 
 
