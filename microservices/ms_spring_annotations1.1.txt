@@ -1,0 +1,18 @@
+1. @SpringBootApplication
+Indicates a configuration class that declares one or more @Bean methods and also triggers auto-configuration and component scanning. This is a convenience annotation that is equivalent to declaring @Configuration, @EnableAutoConfiguration and @ComponentScan.
+
+2. @RestController
+from 4.0
+A convenience annotation that is itself annotated with @Controller and @ResponseBody.
+Types that carry this annotation are treated as controllers where @RequestMapping methods assume @ResponseBody semantics by default.
+
+3. @RequestMapping(value="/accounts",method=RequestMethod.GET)
+Annotation for mapping web requests onto methods in request-handling classes with flexible method signatures.
+
+4. @ResponseBody
+Automatic serialisation of the returned object into HttpResponse, optional if controller is @RestController.
+Annotation that indicates a method return value should be bound to the web response body. Supported for annotated handler methods.
+As of version 4.0 this annotation can also be added on the type level in which case it is inherited and does not need to be added on the method level.
+
+5. @RequestBody
+Annotation indicating a method parameter should be bound to the body of the web request. The body of the request is passed through an HttpMessageConverter to resolve the method argument depending on the content type of the request. Optionally, automatic validation can be applied by annotating the argument with @Valid.

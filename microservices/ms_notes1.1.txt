@@ -1,0 +1,23 @@
+1. Challanges with monolith
+-Increased time to market
+-less maintainable
+-wastage of resources
+-high recovery rate
+-large and dependant teams
+
+
+2. Micro services are samll applicatons those are called together to serve the purpose of enterprise applicaion. brings modularity by decomposing large app into services.
+Loosely coupled SOA with bounded contexts.
+
+3. Benefits of microservices
+-reduced time to market
+-maintanable
+-scaling and resource utilization
+-less recovery time- resilient patterns like circuit breaker, health checks etc
+-small and independant teams
+
+4. Building micro services
+Domain --> subdomains
+
+5. Creating microservices
+-Account microservice

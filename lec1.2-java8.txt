@@ -65,6 +65,9 @@ Map<String, List<Person>> group = people.stream().collect(Collectors.groupingBy(
 		
 System.out.println(group.get("Sharma"));
 
+7)stream has already been operated upon or closed Exception after terminal operation, how to solve it?
+ans: Java streams are not reusable, use supplier.
+
 
 
 
